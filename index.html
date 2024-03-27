@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчет счета в кафе</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="form">
+        <div class="container">
+            <div class="form__wrapper">
+                <h1 class="form__title">Расчет счета в кафе</h1>
+
+                <form class="form__paymentForm" id="form__paymentForm">
+                    <div class="form__row">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" >
+                    </div>
+                    <div class="form__row">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" >
+                    </div>
+                    <button class="form__button btn btn-success" type="submit">Добавить</button>
+                </form>
+
+                <div class="table-container">
+                    <table class="form__table" id="form__table">
+                        <thead class="form__table-head">
+                            <tr class="form__table-row">
+                                <th class="form__table-header">Имя</th>
+                                <th class="form__table-header">Email</th>
+                                <th class="form__table-header">Доля оплаты</th>
+                            </tr>
+                        </thead>
+                        <tbody class="form__table-body">
+                        </tbody>
+                    </table>
+                </div>
+                
+
+                <button class="form__button btn btn-danger" id="resetButton">Сбросить</button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
